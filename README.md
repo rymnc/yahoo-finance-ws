@@ -1,4 +1,4 @@
-# yfinance-ws
+# yahoo-finance-ws
 
 ---
 
