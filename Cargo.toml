@@ -1,0 +1,20 @@
+[package]
+name = "yfinance-ws"
+version = "0.1.0"
+authors = ["rymnc <43716372+rymnc@users.noreply.github.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1.4.0" , features = ["full"] }
+tokio-tungstenite = { version="0.13.0", features=["tls"] }
+futures = "*"
+futures-util = "*"
+tokio-native-tls = "0.3.0"
+serde_json = "*"
+openssl-sys = "*"
+clap = "3.0.0-beta.2"
+
+[features]
+vendored = ["openssl-sys/vendored"]
